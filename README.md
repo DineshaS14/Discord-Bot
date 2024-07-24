@@ -66,7 +66,6 @@ Weather API: https://api.weather.gov/points/{latitude},{longitude}/forecastHourl
 I have used Discord embedded Formats to output some of its work.
 Below I have shared some reference to Embedding.
 
-Embedded Formats
 Embedded formats, often referred to as "embeds" in the context of messaging platforms like Discord, are structured ways to display rich content. In Discord, an embed is a special type of message that includes a variety of elements such as titles, descriptions, fields, images, and colors. Embeds are used to present information in a visually appealing and organized manner.
 
 Key Components of Discord Embeds:
@@ -100,8 +99,8 @@ await message.channel.send(embed=embed)
 
 https://plainenglish.io/blog/send-an-embed-with-a-discord-bot-in-python
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+License:
+This project is licensed under the MIT License.
 
 
 By: Dinesha Shair
