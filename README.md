@@ -62,6 +62,44 @@ Meme API: https://meme-api.com/gimme
 PokeAPI: https://pokeapi.co/api/v2/pokemon/{name}
 Zip Code API: https://www.zipcodeapi.com/rest/{api_key}/info.json/{zip_code}/degrees
 Weather API: https://api.weather.gov/points/{latitude},{longitude}/forecastHourly
+
+I have used Discord embedded Formats to output some of its work.
+Below I have shared some reference to Embedding.
+
+Embedded Formats
+Embedded formats, often referred to as "embeds" in the context of messaging platforms like Discord, are structured ways to display rich content. In Discord, an embed is a special type of message that includes a variety of elements such as titles, descriptions, fields, images, and colors. Embeds are used to present information in a visually appealing and organized manner.
+
+Key Components of Discord Embeds:
+
+Title: The main heading of the embed.
+Description: A detailed description or content that follows the title.
+Fields: Sections within the embed that can contain additional information, often in a key-value format.
+Image: A visual element that can be included to enhance the message.
+Thumbnail: A smaller image that appears in the corner of the embed.
+Color: A border color that can be customized to match the theme or highlight important information.
+Creating Embedded Formats
+In Discord bots, embeds are often created programmatically using libraries such as discord.py. For example, to create an embed in discord.py, you use the discord.Embed class, which allows you to set the title, description, fields, and other properties.
+
+Here's a basic example of creating an embed in discord.py:
+
+python
+Copy code
+import discord
+
+embed = discord.Embed(
+    title="Sample Embed",
+    description="This is a description of the embed.",
+    color=discord.Color.blue()
+)
+embed.add_field(name="Field 1", value="This is the value of field 1", inline=True)
+embed.add_field(name="Field 2", value="This is the value of field 2", inline=True)
+embed.set_image(url="https://example.com/image.png")
+
+# Sending the embed to a channel
+await message.channel.send(embed=embed)
+
+https://plainenglish.io/blog/send-an-embed-with-a-discord-bot-in-python
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
