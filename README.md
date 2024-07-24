@@ -25,7 +25,7 @@ By automating these tasks, the bot provides a seamless and interactive experienc
 Install Dependencies:
 '''
 pip install discord requests pyfiglet python-dotenv pillow
-'''
+
 discord.py for the Discord API wrapper.
 pyfiglet for generating ASCII art.
 Pillow for image processing.
@@ -43,8 +43,7 @@ load_dotenv()
 DISCORD_KEY = os.getenv('DISCORD_KEY')
 
 
-Commands:
-
+Commands
 $hello: Returns a greeting message.
 $meme: Sends a random meme, automating the retrieval from an API.
 $figlet <text>: Generates ASCII art from the given text, automating the art creation process.
@@ -56,16 +55,15 @@ $pokemon <pokemon_name>: Retrieves and displays Pokémon data based on the given
 $weather <zip_code>: Retrieves and displays weather information based on a zip code.
 $randomQuote: Sends a random quote, automating the quote retrieval.
 
-API Endpoints:
-
+API Endpoints
 Cat API: https://api.thecatapi.com/v1/images/search
 Dog API: https://dog.ceo/api/breeds/image/random
 Meme API: https://meme-api.com/gimme
 PokeAPI: https://pokeapi.co/api/v2/pokemon/{name}
 Zip Code API: https://www.zipcodeapi.com/rest/{api_key}/info.json/{zip_code}/degrees
 Weather API: https://api.weather.gov/points/{latitude},{longitude}/forecastHourly
-
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 
 By: Dinesha Shair
